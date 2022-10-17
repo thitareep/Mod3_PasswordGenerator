@@ -5,3 +5,5 @@ This is the completed application of the password generator for the Module 3 Jav
 ## Screenshot
 ![](Assets/PWGen-Screenshot.png)
 ## Deployed Link
+Link to deployed application:
+https://thitareep.github.io/Mod3_PasswordGenerator/
