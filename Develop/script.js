@@ -1,6 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+//Prompt with instructions to start//
+window.onload = alert ("Please click 'Generate Password' to start!")
+
 function randomInt(min, max) {
   if (!max) {
     max = min
@@ -16,7 +19,7 @@ function getRandomChoice(list) {
 
 //Function for password length (between 8-128 characters)//
 function generatePassword () {
-  var userInput = window.prompt("How many characters would you like your password to be?")
+  var userInput = window.prompt("How many characters would you like your password to be? (Between 8-128 characters)")
 
   var passwordLength = parseInt(userInput)
   if (isNaN(passwordLength)) {
