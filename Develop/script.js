@@ -7,7 +7,7 @@ function generatePassword () {
 
   var passwordLength = parseInt(userInput)
   if (isNaN(passwordLength)) {
-    window.alert("That is not a valid number")
+    window.alert("Please select a valid number")
     return
   }
   
@@ -15,6 +15,12 @@ function generatePassword () {
     window.alert("Password length must be between 8 and 128 characters")
     return
   }
+
+//User selection prompts for password criteria//
+var selectUppercase = window.confirm("Would you like to include uppercase letters?")
+var selectLowercase = window.confirm("Would you like to include lowercase letters?")
+var selectNumbers = window.confirm("Would you like to include numbers?")
+var selectSpecial = window.confirm("Would you like to include special characters?")
 
 //Variables for Password Criteria"
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
